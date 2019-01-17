@@ -1,0 +1,30 @@
+mat-sidenav-container {
+    width: 100% !important;
+    height: calc(100vh - 70px) !important;
+  }
+  
+  mat-sidenav {
+    background-color: red !important;
+  }
+        
+  div.my-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fbfbfb;
+    min-height: 100%;
+  }
+  
+  mat-toolbar {
+    height: 64px;
+    position: relative;
+    z-index: 100;
+  }
+
+  .example-footer {
+    height: 200px;
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+  }
