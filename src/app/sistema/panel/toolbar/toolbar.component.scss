@@ -1,5 +1,6 @@
 .bg-light {
     background-color: #3604C9 !important;
+    padding: 0.5rem 3rem !important;
 
     .mat-button {
         color: white;
@@ -7,5 +8,21 @@
 
     .flex-span {
         flex: 1 1 auto;
+    }
+
+    .perfil {
+        .mat-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 20px;
+            color: #FFBA00;
+        }
+        span {
+            font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+            color: white;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 0 0 25px;
+        }
     }
 }

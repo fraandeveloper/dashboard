@@ -15,7 +15,7 @@ export class ViewComponent implements OnInit {
     setTimeout(() => {
       $('.mat-drawer-content').slimScroll({
         height: 'auto',
-        color: 'rgb(228, 228, 231)',
+        color: '#000',
         size: '5px',
       });
     }, 0);

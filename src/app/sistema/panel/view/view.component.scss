@@ -1,6 +1,7 @@
 mat-sidenav-container {
     width: 100% !important;
     height: calc(100vh - 70px) !important;
+    
   }
   
   mat-sidenav {
@@ -14,6 +15,10 @@ mat-sidenav-container {
     flex-direction: column;
     background-color: #fbfbfb;
     min-height: 100%;
+    background: url('../../../../assets/images/image-header.svg') no-repeat;
+    background-size: 88%;
+    background-position-y: 28px;
+    background-position-x: 262px;
   }
   
   mat-toolbar {
@@ -28,3 +33,5 @@ mat-sidenav-container {
     position: absolute;
     bottom: 0;
   }
+
+ 

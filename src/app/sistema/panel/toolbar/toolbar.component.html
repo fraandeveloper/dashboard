@@ -6,28 +6,28 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Criar novo <span class="sr-only">(current)</span></a>
+        <a style="margin-left: 60px;" class="nav-link button-basic yellow" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>  Criar novo <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Meus Documentos</a>
+        <a class="nav-link button-basic transparent" href="#">Meus Documentos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Apps & Integrações</a>
+        <a class="nav-link button-basic transparent" href="#">Apps & Integrações</a>
       </li>
     </ul>
     <span class="navbar-text">
         <div class="perfil">
+          <button mat-icon-button [matMenuTriggerFor]="menu">
             <mat-icon>notifications</mat-icon>
+        </button>
+          <mat-menu #menu="matMenu">
+              <button mat-menu-item>Perfil</button>
+              <button mat-menu-item>Pedidos</button>
+              <button mat-menu-item>Sair</button>
+            </mat-menu>
             <img src="../../../../assets/images/image-person.svg" alt="Person">
-            <span>Monica Lima</span>
-            <button mat-icon-button [matMenuTriggerFor]="menu">
-                <mat-icon>expand_more</mat-icon>
-              </button>
-              <mat-menu #menu="matMenu">
-                  <button mat-menu-item>Perfil</button>
-                  <button mat-menu-item>Pedidos</button>
-                  <button mat-menu-item>Sair</button>
-                </mat-menu>
+            <span>Daniela Olveira</span>
+            
         </div>
     </span>
   </div>
