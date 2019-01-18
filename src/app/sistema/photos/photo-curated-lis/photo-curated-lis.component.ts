@@ -1,5 +1,6 @@
-import { PhotoCuratedService } from './../../core/photo/photo-curated.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 import { Photo } from '../photo/photo';
 
 @Component({
@@ -11,15 +12,10 @@ export class PhotoCuratedLisComponent implements OnInit {
 
   photos: Photo[] = [];
 
-  constructor(private photoServive: PhotoCuratedService) {}
+  constructor(private activatedRoute: ActivatedRoute) {}
   
   ngOnInit(): void {
-    this.photoServive
-    .getCurated()
-    .subscribe(photos => {
-      console.log(photos);
-      this.photos = photos
-    } );
+    this.photos = this.activatedRoute.snapshot.data['photos'];
   }
 
 }

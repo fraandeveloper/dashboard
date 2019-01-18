@@ -10,7 +10,7 @@ const routes: Routes = [
 
   {
     path: 'panel',
-    loadChildren: './sistema/panel/panel.module#PanelModule'
+    loadChildren: './sistema/panel/panel.module#PanelModule',
   },
 ];
 

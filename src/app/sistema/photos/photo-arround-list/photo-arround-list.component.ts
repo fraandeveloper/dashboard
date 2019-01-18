@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PhotoArroundService } from '../../core/photo/photo-arround.service';
+import { ActivatedRoute } from '@angular/router';
+
 import { Photo } from '../photo/photo';
 
 @Component({
@@ -9,17 +10,13 @@ import { Photo } from '../photo/photo';
 })
 export class PhotoArroundListComponent implements OnInit {
 
-  photos: Photo[] = [];
-  constructor(private photoService: PhotoArroundService) { }
+  photo: Photo[] = [];
+
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.photoService.getArroundPhotos()
-    .subscribe(
-      photos => {
-        console.log(photos);
-        this.photos = photos;
-      }
-    )
+    this.photo = this.activatedRoute.snapshot.data['photo']
+    
   }
 
 }

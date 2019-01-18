@@ -18,6 +18,8 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { PhotoCuratedService } from '../core/photo/photo-curated.service';
+import { PhotoListResolver } from '../photos/photo-curated-lis/photo-list.resolver';
+import { PhotoListResolverArround } from '../photos/photo-arround-list/photo-arround.resolver';
 
 
 
@@ -41,7 +43,9 @@ import { PhotoCuratedService } from '../core/photo/photo-curated.service';
   ],
   providers: [
     PhotoCuratedService,
-    PhotoArroundService
+    PhotoArroundService,
+    PhotoListResolver,
+    PhotoListResolverArround
   ]
 })
 export class PanelModule { }
