@@ -1,0 +1,8 @@
+<ol class="list-unstyled row">
+  <li *ngFor="let photo of photos; let i=index" class="col-3">
+      <div *ngIf="i < 8">
+          <app-photo [url]="photo.urls.raw" [description]="photo.description" [title]="photo.user.name" [bio]="photo.user.bio"></app-photo>
+      </div>
+  </li>
+</ol>
+
