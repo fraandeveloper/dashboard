@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: 'panel',
     loadChildren: './sistema/panel/panel.module#PanelModule'
-  }
+  },
 ];
 
 @NgModule({
