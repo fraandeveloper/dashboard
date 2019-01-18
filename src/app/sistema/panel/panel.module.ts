@@ -1,3 +1,8 @@
+import { PhotoArroundService } from './../core/photo/photo-arround.service';
+import { PhotoComponent } from './../photos/photo/photo.component';
+import { PhotosModule } from './../photos/photos.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -12,6 +17,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { PhotoCuratedService } from '../core/photo/photo-curated.service';
+
+
 
 @NgModule({
   declarations: [
@@ -23,11 +31,17 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
     PanelRoutingModule,
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    PhotosModule
+  ],
+  providers: [
+    PhotoCuratedService,
+    PhotoArroundService
   ]
 })
 export class PanelModule { }
