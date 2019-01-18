@@ -15,15 +15,9 @@
           <h5>Fotos escolhidas por nosso time</h5>
           <h5>Ver Todos <i class="fa fa-long-arrow-right" aria-hidden="true"></i></h5>
         </div>
-
-        <div class="container-image">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
+        <!-- <app-photo *ngFor="let photo of photos" [url]="photo.urls.raw" [description]="photo.description"></app-photo> -->
+        <div class="images">
+            <app-photo-curated-lis></app-photo-curated-lis>
         </div>
       </section>
     </div>
@@ -34,6 +28,12 @@
       <div class="ui horizontal divider">
         Inspire-se
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <app-photo-arround-list></app-photo-arround-list>
     </div>
   </div>
 </div>

@@ -13,7 +13,7 @@
 section.container-galery {
     width: 100%;
     background: white;
-    height: calc(15em + 24em);
+    height: calc(15em + 33em);
     position: relative;
     border-radius: .9rem;
     box-shadow: 0 0 26px rgba(170, 187, 221, 0.43);
@@ -31,6 +31,10 @@ section.container-galery {
             font-size: 1.1em;
             color: #04183E;
         }
+    }
+
+    .images {
+        padding: 48px 60px;
     }
 }
 
